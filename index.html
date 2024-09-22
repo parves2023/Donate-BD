@@ -15,11 +15,6 @@
 
     
 
-    <!-- font awesome cdn link  -->
-    <script
-      src="https://kit.fontawesome.com/53e3e33164.js"
-      crossorigin="anonymous"
-    ></script>
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,12 +30,12 @@
   <body class="lexend">
     <header class="mx-auto flex  sticky top-0 z-10 flex-col">
         <!-- navbar  -->
-      <div class="bg-slate-100 pb-4">
+      <div class="bg-slate-100 pb-4 mx-auto w-full">
         <div class="navbar container mx-auto ">
             <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                    <button class="btn btn-active btn-primary text-xl font-bold" onclick="showfaq()">Blog</button>
+              <div class="dropdown ">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle ">
+                    <button class="btn btn-active btn-primary text-sm p-1 md:p-2  md:text-xl font-bold" onclick="showfaq()">Blog</button>
                     <path
                       stroke-linecap="round"
                       stroke-linejoin="round"
@@ -58,14 +53,14 @@
             </div>
             <div class="navbar-center">
               <a class="btn btn-ghost text-xl">
-                <div class="flex gap-1 items-center">
+                <div class="flex flex-col md:flex-row gap-1 items-center">
                     <img src="assets/logo.png" alt="logo">
-                    <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
+                    <h1 class="text-sm md:text-xl font-semibold">Donate Bangladesh</h1>
                 </div>
               </a>
             </div>
             <div class="navbar-end">
-              <div class="flex items-center gap-1">
+              <div class="flex flex-col md:flex-row items-center gap-1">
                 <img src="assets/coin.png" alt="coin">
                 <h2 id="currentmoney">00</h2>
               </div>
@@ -98,7 +93,7 @@
 
                   <!-- donation history  -->
                   <div id="historyCard" class="hidden">
-                    <div id="historyCardparent" class="card lg:card-side bg-base-100 mx-auto w-10/12 p-4 flex flex-col space-y-5">
+                    <div id="historyCardparent" class="card lg:card-side bg-base-100 mx-auto w-11/12 p-4 flex flex-col space-y-5">
                         <!-- card  -->
                          
     
