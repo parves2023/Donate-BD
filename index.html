@@ -33,53 +33,59 @@
     </style>
   </head>
   <body class="lexend">
-    <header class="container-full mx-auto h-24 flex bg-slate-100">
-      <div class="navbar container mx-auto">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                <button class="btn btn-active btn-primary text-xl font-bold">Blog</button>
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h7"
-                />
-              </svg>
+    <header class="mx-auto flex  sticky top-0 z-10 flex-col">
+        <!-- navbar  -->
+      <div class="bg-slate-100 pb-4">
+        <div class="navbar container mx-auto ">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                    <button class="btn btn-active btn-primary text-xl font-bold" onclick="showfaq()">Blog</button>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h7"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content"
+                >
+                </ul>
+              </div>
             </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content"
-            >
-            </ul>
-          </div>
-        </div>
-        <div class="navbar-center">
-          <a class="btn btn-ghost text-xl">
-            <div class="flex gap-1 items-center">
-                <img src="assets/logo.png" alt="logo">
-                <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
+            <div class="navbar-center">
+              <a class="btn btn-ghost text-xl">
+                <div class="flex gap-1 items-center">
+                    <img src="assets/logo.png" alt="logo">
+                    <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
-        <div class="navbar-end">
-          <div class="flex items-center gap-1">
-            <img src="assets/coin.png" alt="coin">
-            <h2>5500 BDT</h2>
+            <div class="navbar-end">
+              <div class="flex items-center gap-1">
+                <img src="assets/coin.png" alt="coin">
+                <h2 id="currentmoney">00</h2>
+              </div>
+                
+            </div>
           </div>
-            
-        </div>
       </div>
+
+      <!-- buttons  -->
+      <div class="flex gap-4 justify-center backdrop-blur-md bg-white/10 py-4">
+        <button class="btn btn-outline btn-primary">Donation</button>
+        <button class="btn btn-outline btn-primary">History</button>
+     </div>
+
     </header>
 
-    <main class="my-20">
+    <main>
         <!-- donate section  -->
         <section class="container flex flex-col justify-center mx-auto">
-            <!-- buttons  -->
-             <div class="flex gap-4 justify-center">
-                <button class="btn btn-outline ">Donation</button>
-                <button class="btn btn-outline ">History</button>
-             </div>
+            
 
              <!-- cards -->
               <div class="flex flex-col justify-center mx-auto w-full my-10 gap-6">
@@ -94,19 +100,19 @@
                     <div class="card-body w-1/2">
                         <div class="flex items-center gap-2 p-4 bg-slate-100 rounded-2xl w-4/12 justify-center">
                             <img src="assets/coin.png" alt="coin">
-                            <p class="text-gray-500">0 BDT</p>
+                            <p class="text-gray-500" id="noakhalidonation">0 BDT</p>
                         </div>
                       <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
                       <p class="text-gray-600 leading-loose"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                      <input type="text" placeholder="Type here" class="input input-bordered w-full" />
+                      <input type="text" id="nInput" placeholder="Type here" class="input input-bordered w-full" />
                       <div class="card-actions justify-start w-full">
-                        <button class="btn btn-primary w-full">Listen</button>
+                        <button id="nDonatebtn" class="btn btn-primary w-full" >Donate</button>
                       </div>
                     </div>
                   </div>
 
                   <!-- donation history  -->
-                  <div class="card lg:card-side bg-base-100 mx-auto w-10/12 p-4 flex flex-col space-y-5">
+                  <div class="card hidden lg:card-side bg-base-100 mx-auto w-10/12 p-4 flex flex-col space-y-5">
                     <!-- card  -->
                      <div class="flex flex-col px-4 py-6 gap-4 rounded-xl justify-between border border-gray-300">
                         <h1 class="text-xl font-semibold">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
@@ -116,7 +122,7 @@
                     </div>
 
                                                 <!-- Open the modal using ID.showModal() method -->
-                            <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+                            <button class="btn hidden" onclick="my_modal_1.showModal()">open modal</button>
                             <dialog id="my_modal_1" class="modal">
                             <div class="modal-box text-center flex flex-col justify-center items-center">
                                 <h3 class="text-4xl  font-bold">Congrates!</h3>
@@ -136,5 +142,8 @@
               </div>
         </section>
     </main>
+
+
+    <script src="script.js"></script>
   </body>
 </html>

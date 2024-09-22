@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    
+        <!-- tailwind css and daisy ui cnd  -->
+        <link
+          href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+          rel="stylesheet"
+          type="text/css"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+    
+        
+    
+        <!-- font awesome cdn link  -->
+        <script
+          src="https://kit.fontawesome.com/53e3e33164.js"
+          crossorigin="anonymous"
+        ></script>
+    
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    
+        <style>
+            .lexend{
+                font-family: "Lexend", sans-serif;
+            }
+        </style>
+</head>
+<body class="lexend">
+
+    <header class="mx-auto flex  sticky top-0 z-10 flex-col">
+        <!-- navbar  -->
+    <div class="bg-slate-100 pb-4">
+        <div class="navbar container mx-auto ">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                    <button class="btn btn-active btn-primary text-xl font-bold" onclick="showindex()">Blog</button>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h7"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content"
+                >
+                </ul>
+              </div>
+            </div>
+            <div class="navbar-center">
+              <a class="btn btn-ghost text-xl">
+                <div class="flex gap-1 items-center">
+                    <img src="assets/logo.png" alt="logo">
+                    <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
+                </div>
+              </a>
+            </div>
+            <div class="navbar-end">
+              <div class="flex items-center gap-1">
+                <img src="assets/coin.png" alt="coin">
+                <h2>5500 BDT</h2>
+              </div>
+                
+            </div>
+          </div>
+      </div>
+
+      <!-- buttons  -->
+      <div class="flex gap-4 justify-center backdrop-blur-md bg-white/10 py-4">
+        <button class="btn btn-outline btn-primary">Donation</button>
+        <button class="btn btn-outline btn-primary">History</button>
+     </div>
+
+    </header>
+
+      <!-- section faq  -->
+       <section class="w-full max-w-[1440px] mx-auto space-y-2 my-10">
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+       </section>
+    <script src="script.js"></script>
+</body>
+</html>
