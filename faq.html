@@ -29,50 +29,49 @@
         </style>
 </head>
 <body class="lexend">
-
-    <header class="mx-auto flex  sticky top-0 z-10 flex-col">
-        <!-- navbar  -->
-    <div class="bg-slate-100 pb-4">
-        <div class="navbar container mx-auto ">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                    <button class="btn btn-active btn-primary text-xl font-bold" onclick="showindex()">Blog</button>
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h16M4 18h7"
-                    />
-                  </svg>
-                </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content"
-                >
-                </ul>
-              </div>
+  <header class="mx-auto flex  sticky top-0 z-10 flex-col">
+    <!-- navbar  -->
+  <div class="bg-slate-100 pb-4 mx-auto w-full">
+    <div class="navbar container mx-auto ">
+        <div class="navbar-start">
+          <div class="dropdown ">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle ">
+                <button class="btn btn-active btn-primary text-sm p-1 md:p-2  md:text-xl font-bold" onclick="showindex()">Blog</button>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
             </div>
-            <div class="navbar-center">
-              <a class="btn btn-ghost text-xl">
-                <div class="flex gap-1 items-center">
-                    <img src="assets/logo.png" alt="logo">
-                    <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
-                </div>
-              </a>
-            </div>
-            <div class="navbar-end">
-              <div class="flex items-center gap-1">
-                <img src="assets/coin.png" alt="coin">
-                <h2>5500 BDT</h2>
-              </div>
-                
-            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content"
+            >
+            </ul>
           </div>
+        </div>
+        <div class="navbar-center">
+          <a class="btn btn-ghost text-xl">
+            <div class="flex flex-col md:flex-row gap-1 items-center">
+                <img src="assets/logo.png" alt="logo">
+                <h1 class="text-sm md:text-xl font-semibold">Donate Bangladesh</h1>
+            </div>
+          </a>
+        </div>
+        <div class="navbar-end">
+          <div class="flex flex-col md:flex-row items-center gap-1">
+            <img src="assets/coin.png" alt="coin">
+            <h2 id="currentmoney">00</h2>
+          </div>
+            
+        </div>
       </div>
+  </div>
 
 
-    </header>
+</header>
 
       <!-- section faq  -->
        <section class="w-full max-w-[1440px] mx-auto space-y-2 my-10">
