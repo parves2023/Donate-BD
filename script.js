@@ -4,7 +4,6 @@ function showfaq() {
 
 
 let currentBalance = 5500;
-let noakhaliDonate = 1100;
 let documentMoney = document.getElementById("currentmoney");
 
 const donationButton = document.getElementById("donationButton");
@@ -163,5 +162,4 @@ function appendHistory(money, place) {
 }
 
 documentMoney.innerHTML = currentBalance;
-noakhalidonation.innerHTML = noakhaliDonate;
 
